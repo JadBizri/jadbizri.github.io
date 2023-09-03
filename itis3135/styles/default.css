@@ -48,3 +48,7 @@ footer {
     flex-direction: column;
     gap: 10px;
 }
+
+main {
+    text-align: center;
+}
