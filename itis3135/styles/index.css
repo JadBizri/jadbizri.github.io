@@ -1,0 +1,14 @@
+#escape {
+    width: 600px;
+    min-width: 200px;
+    max-width: 100%;
+    border-radius: 0.3em;
+}
+
+main {
+    text-align: center;
+}
+
+figure {
+    margin: 0;
+}

@@ -1,0 +1,50 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #2E4057;
+    color: white;
+    padding: 16px 5%;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-list {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.socials {
+    justify-content: center;
+}
+
+.link {
+    color: #FFFD82;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.link:hover {
+    color: #ED7D3A;
+}
+
+.link:active {
+    color: #a4243b;
+}
+
+footer {
+    padding-top: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
