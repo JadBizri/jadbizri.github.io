@@ -14,6 +14,7 @@ h1, h2, h3 {
 header {
     display: flex;
     justify-content: space-between;
+    border-bottom: solid;
 }
 
 .link-list {
@@ -47,6 +48,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    border-top: solid;
 }
 
 main {
