@@ -4,6 +4,9 @@ table {
     background-color: rgb(211, 211, 211);
     color: black;
     border: 4px solid black;
+    max-width: 100%;
+    min-width: 200px;
+    width: 700px;
 }
 
 th, td {
@@ -15,12 +18,8 @@ th, td {
 .data-list {
     line-height: 30px;
     text-align: left;
-}
-
-.list-and-table {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    margin: 0 auto;
+    width: fit-content;
 }
 
 .table-header th{
@@ -34,4 +33,8 @@ th, td {
 
 figcaption, figure {
     margin: 0;
+}
+
+.overflow {
+    overflow-x: auto;
 }

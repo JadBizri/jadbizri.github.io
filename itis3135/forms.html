@@ -28,38 +28,59 @@
         <div class="content">
             <br>
             <form id="addProductForm" class="form">
-                <label for="name">Name:</label>
-                <input class="text" type="text" id="name" placeholder="Name" name="name" required>
-    
-                <label for="phone">Number:</label>
-                <input class="text" type="tel" id="phone" placeholder="704555555" name="phone" required>
-    
-                <label for="email">Email:</label>
-                <input class="text" type="email" id="email" name="email" placeholder="johndoe@example.com" required>
-    
-                <label for="hear">How to did you hear about us?</label>
-                <select class="text" id="hear" name="hear" required>
-                    <option value="board">Job Board</option>
-                    <option value="fair">Career Fair</option>
-                    <option value="referral">Employee Referral</option>
-                </select>
-
-                <p>If applying for specific roles, please check them here:</p>
-                <div class="checkboxes">
-                    <label for="assistant">Assistant</label>
-                    <input type="checkbox" id="assistant" name="roles">
-                    <label for="minion">Minion</label>
-                    <input type="checkbox" id="minion" name="roles">
-                </div>
-    
-                <p>Would you like to opt-in for SMS messages?</p>
-                <div>
-                    <input type="radio" id="yes" name="sms" value="yes" checked/>
-                    <label for="yes">Yes</label>
-                    <input type="radio" id="no" name="sms" value="no" />
-                    <label for="no">No</label>
+                <div class="text">
+                    <label for="name">Name<span class="required">*</span>:</label>
+                    <input type="text" id="name" placeholder="Name" name="name" required>
                 </div>
                 
+                <div class="text">
+                    <label for="phone">Number<span class="required">*</span>:</label>
+                    <input type="tel" id="phone" placeholder="(704) 555-5555" name="phone" required>
+                </div>
+    
+                <div class="text">
+                    <label for="email">Email<span class="required">*</span>:</label>
+                    <input type="email" id="email" name="email" placeholder="johndoe@example.com" required>
+                </div>
+
+                <div class="divider"></div>
+    
+                <div class="select">
+                    <label for="hear">How did you hear about us? <span class="required">*</span></label>
+                    <select class="text" id="hear" name="hear">
+                        <option value="board">Job Board</option>
+                        <option value="fair">Career Fair</option>
+                        <option value="referral">Employee Referral</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="divider"></div>
+    
+                <div>
+                    <p class="padding">If applying for specific roles, please check them here:</p>
+                    <div class="checkboxes">
+                        <label for="assistant">Assistant</label>
+                        <input type="checkbox" id="assistant" name="roles">
+                        <label for="minion">Minion</label>
+                        <input type="checkbox" id="minion" name="roles">
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div>
+                    <p class="padding">Would you like to opt-in for SMS messages? <span class="required">*</span></p>
+                    <div>
+                        <input type="radio" id="yes" name="sms" value="yes" checked>
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="sms" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+    
                 <button type="submit">Submit</button>
             </form>
             <br>

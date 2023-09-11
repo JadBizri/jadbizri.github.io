@@ -1,23 +1,39 @@
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    border: solid;
-    width: 30%;
-    margin: auto;
+    gap: 20px;
+    border: solid black;
+    margin: 0 auto;
+    width: 300px;
     padding: 8px;
     text-align: left;
+    background-color: #a4243b;
 }
 
-.text {
-    width: 50%;
+.divider {
+    height: 2px;
+    border-bottom: solid;
+    width: 80%;
+    align-self: center;
+    border-color: black;
 }
 
-form p {
-    padding: 0;
+.text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.padding {
+    padding: 0 0 10px 0;
     margin: 0;
 }
 
-label {
-    text-align: left;
+.select {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.required {
+    color: #FFFD82;
 }
