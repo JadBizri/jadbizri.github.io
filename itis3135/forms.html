@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jad Bizri's Jobless Bullfrog || ITIS 3135 Contract</title>
+    <title>Jad Bizri's Jobless Bullfrog || ITIS 3135 Form</title>
     <link rel="stylesheet" href="./styles/default.css">
-    <link rel="stylesheet" href="./styles/contract.css">
+    <link rel="stylesheet" href="./styles/forms.css">
 </head>
 <body>
     <header>
@@ -15,8 +15,8 @@
                 <li><a class="link" href="./">Home</a></li>
                 <li><a class="link" href="./introduction.html">Introduction</a></li>
                 <li><a class="link" href="./tables.html">Table</a></li>
-                <li><a class="link" href="./forms.html">Form</a></li>
-                <li>Contract</li>
+                <li>Form</li>
+                <li><a class="link" href="./contract.html">Contract</a></li>
                 <li><a class="link" href="./../">CLT Home</a></li>
             </ul>
         </nav>
@@ -24,16 +24,44 @@
 
     <main>
         <br>
-        <h2>Contract</h2>
+        <h2>Form</h2>
         <div class="content">
             <br>
-            <p>I, Jad F. Bizri agree to abide by the terms in my Fall 2023 ITIS-3135-091 Web-Based Application Design and Development with my instructor, D.I. von Briesen.</p>
+            <form id="addProductForm" class="form">
+                <label for="name">Name:</label>
+                <input class="text" type="text" id="name" placeholder="Name" name="name" required>
+    
+                <label for="phone">Number:</label>
+                <input class="text" type="tel" id="phone" placeholder="704555555" name="phone" required>
+    
+                <label for="email">Email:</label>
+                <input class="text" type="email" id="email" name="email" placeholder="johndoe@example.com" required>
+    
+                <label for="hear">How to did you hear about us?</label>
+                <select class="text" id="hear" name="hear" required>
+                    <option value="board">Job Board</option>
+                    <option value="fair">Career Fair</option>
+                    <option value="referral">Employee Referral</option>
+                </select>
 
-            <p>I understand that all work that I do on my school and personal websites will be publicly available to the world. I will not put information there that is inappropriate for schoolwork, or that I wish to keep private.</p>
-            <br>
-            <p>Signed:</p>
-
-            <p>Jad F. Bizri, 03 September 2023</p>
+                <p>If applying for specific roles, please check them here:</p>
+                <div class="checkboxes">
+                    <label for="assistant">Assistant</label>
+                    <input type="checkbox" id="assistant" name="roles">
+                    <label for="minion">Minion</label>
+                    <input type="checkbox" id="minion" name="roles">
+                </div>
+    
+                <p>Would you like to opt-in for SMS messages?</p>
+                <div>
+                    <input type="radio" id="yes" name="sms" value="yes" checked/>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="sms" value="no" />
+                    <label for="no">No</label>
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
             <br>
         </div>
     </main>
