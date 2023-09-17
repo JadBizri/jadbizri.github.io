@@ -1,0 +1,40 @@
+section {
+    padding: 0 5%;
+    line-height: 1.5rem;
+}
+
+.list {
+    padding: 0;
+    list-style: none;
+}
+
+span {
+    font-weight: 900;
+    border: solid;
+    padding: 3px;
+    background-color: #a4243b;
+    max-width: 100px;
+    min-width: 100px;
+    text-align: center;
+}
+
+li {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+li p {
+    margin: 0;
+    max-width: 85%;
+}
+
+hr {
+    color: white;
+    margin: 50px auto;
+    width: 80%;
+    text-align: center;
+}

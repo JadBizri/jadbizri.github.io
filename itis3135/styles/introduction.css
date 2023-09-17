@@ -18,3 +18,7 @@ figure {
 .sublist {
     gap: 10px;
 }
+
+.name-img {
+    text-align: center;
+}
