@@ -18,7 +18,7 @@ span {
     text-align: center;
 }
 
-.list ul li {
+.list li {
     display: flex;
     margin-top: 20px;
     justify-content: space-between;
@@ -27,7 +27,7 @@ span {
     gap: 10px;
 }
 
-.list ul li p {
+.list li p {
     margin: 0;
     max-width: 85%;
 }
