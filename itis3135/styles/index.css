@@ -1,8 +1,4 @@
-.content {
-    text-align: left;
-}
-
-.main-list li:nth-child(7) a{
+.main-list li:nth-child(1) a{
     cursor: default;
     text-decoration: none;
     pointer-events: none;
