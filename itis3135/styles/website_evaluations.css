@@ -8,7 +8,7 @@ section {
     list-style: none;
 }
 
-span {
+.list span {
     font-weight: 900;
     border: solid;
     padding: 3px;
