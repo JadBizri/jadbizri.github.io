@@ -18,13 +18,6 @@ section {
     text-align: center;
 }
 
-.main-list li:nth-child(5) a{
-    cursor: default;
-    text-decoration: none;
-    pointer-events: none;
-    color: white;
-}
-
 .list li {
     display: flex;
     margin-top: 20px;

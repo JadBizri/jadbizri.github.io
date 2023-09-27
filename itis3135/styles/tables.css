@@ -42,10 +42,3 @@ figcaption, figure {
 main {
     text-align: center;
 }
-
-.main-list li:nth-child(3) a{
-    cursor: default;
-    text-decoration: none;
-    pointer-events: none;
-    color: white;
-}

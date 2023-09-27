@@ -37,10 +37,3 @@ form {
 .required {
     color: #FFFD82;
 }
-
-.main-list li:nth-child(4) a{
-    cursor: default;
-    text-decoration: none;
-    pointer-events: none;
-    color: white;
-}

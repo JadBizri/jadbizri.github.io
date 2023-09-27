@@ -1,6 +1,0 @@
-.main-list li:nth-child(1) a{
-    cursor: default;
-    text-decoration: none;
-    pointer-events: none;
-    color: white;
-}

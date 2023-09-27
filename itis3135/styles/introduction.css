@@ -15,13 +15,6 @@ figure {
     gap: 20px;
 }
 
-.main-list li:nth-child(2) a{
-    cursor: default;
-    text-decoration: none;
-    pointer-events: none;
-    color: white;
-}
-
 .sublist {
     gap: 10px;
 }
