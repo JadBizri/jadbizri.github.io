@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jad Bizri's Jobless Bullfrog || ITIS 3135 First Scripts</title>
     <link rel="stylesheet" href="./styles/default.css">
     <link rel="stylesheet" href="./styles/forms.css">
+    <style>
+        .buttons {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .buttons button {
+            padding: 10px;
+            width: 200px;
+            background-color: #FFFD82;
+            border-radius: 0.4em;
+            border: none;
+        }
+        .buttons button:hover {
+            cursor: pointer;
+            background-color: #ED7D3A;
+        }
+        .buttons button:active {
+            background-color: #a4243b;
+        }
+    </style>
 </head>
+
 <body>
 
     <div data-include="./components/header.html"></div>
@@ -19,36 +41,45 @@
         </div>
         <br>
         <div style="display: flex;">
-        <form id="greeting-form" style="width: 400px;" onsubmit="return false;">
-            <div class="text">
-                <label for="name">Name<span class="required">*</span>:</label>
-                <input type="text" id="name" placeholder="Name" name="name" required>
-            </div>
-            
-            <div class="text">
-                <label for="feeling">How are you feeling?<span class="required">*</span>:</label>
-                <input type="text" id="feeling" placeholder="Typing..." name="feeling" required>
-            </div>
+            <form id="greeting-form" style="width: 400px;" onsubmit="return false;">
+                <div class="text">
+                    <label for="name">Name<span class="required">*</span>:</label>
+                    <input type="text" id="name" placeholder="Name" name="name" required>
+                </div>
 
-            <button style="width: fit-content; margin: 0 auto;" type="submit">Submit</button>
-        </form>
+                <div class="text">
+                    <label for="feeling">How are you feeling?<span class="required">*</span>:</label>
+                    <input type="text" id="feeling" placeholder="Typing..." name="feeling" required>
+                </div>
 
-        <form id="number-form" style="width: 400px; align-self: center;" onsubmit="return false;">
-            <div class="text">
-                <label for="number">Enter a number (1-10)<span class="required">*</span>:</label>
-                <input type="number" id="number" placeholder="0" name="number" min="-10" max="10" step=".01" required>
-            </div>
+                <button style="width: fit-content; margin: 0 auto;" type="submit">Submit</button>
+            </form>
 
-            <button style="width: fit-content; margin: 0 auto;" type="submit">Submit</button>
-        </form>
+            <form id="number-form" style="width: 400px; align-self: center;" onsubmit="return false;">
+                <div class="text">
+                    <label for="number">Enter a number (1-10)<span class="required">*</span>:</label>
+                    <input type="number" id="number" placeholder="0" name="number" min="-10" max="10" step=".01"
+                        required>
+                </div>
+
+                <button style="width: fit-content; margin: 0 auto;" type="submit">Submit</button>
+            </form>
         </div>
         <br>
         <div id="greeting" style="text-align: center;"></div>
         <br>
+
+        <div class="buttons">
+            <button onclick="alert('You Failed.')">Do not click me</button>
+            <button onclick="alert('Way too much :/');">Taxes on a $100k income?</button>
+            <button onclick="alert('21');">9 + 10</button>
+            <button onclick="if (Math.random() >= 0.5) {alert('Yup');} else {alert('Nope');}">Yes or No?</button>
+        </div>
+        <br>
     </main>
 
     <div data-include="./components/footer.html"></div>
-    
+
     <script src="./scripts/HTMLInclude.min.js"></script>
     <script src="./scripts/defaultscripts.js"></script>
 </body>
