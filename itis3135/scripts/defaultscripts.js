@@ -31,9 +31,25 @@ function getDayTime() {
     //add to html
     const dateContainer = document.getElementById("dateContainer");
     const dateText = document.createElement("h3");
-    dateText.textContent = `It is currently ${hours}:${minutes} ${amOrPm} on ${weekDays[day]}, ${dayNum} ${months[month]}, ${year}.`;
+    dateText.textContent = `It is currently ${hours}:${minutes} ${amOrPm} on ${weekDays[day]}, ${months[month]} ${dayNum}, ${year}.`;
     dateContainer.appendChild(dateText);
 }
+
+const greetingForm = document.getElementById("greeting-form");
+
+// Add an event listener for the form's submit event
+greetingForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const feeling = document.getElementById("feeling").value;
+
+    const greetingText = document.createElement("h3");
+    greetingText.textContent = `Jobless Bullfrog welcomes you, ${name}! We're glad you are doing ${feeling}!`;
+    const greeting = document.getElementById("greeting");
+    greeting.innerHTML = ''; // Clear previous content
+    greeting.appendChild(greetingText);
+});
 
 //function call
 getDayTime();

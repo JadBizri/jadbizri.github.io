@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jad Bizri's Jobless Bullfrog || ITIS 3135 First Scripts</title>
     <link rel="stylesheet" href="./styles/default.css">
+    <link rel="stylesheet" href="./styles/forms.css">
 </head>
 <body>
 
@@ -17,15 +18,21 @@
         <div id="dateContainer" style="text-align: center;">
         </div>
         <br>
-        <form style="text-align: center;">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <br>
-            <label for="feeling">How are ya feelin' today?</label>
-            <br>
-            <button id="name-input" type="submit">Submit</button>
+        <form id="greeting-form" style="width: 450px;" onsubmit="return false;">
+            <div class="text">
+                <label for="name">Name<span class="required">*</span>:</label>
+                <input type="text" id="name" placeholder="Name" name="name" required>
+            </div>
+            
+            <div class="text">
+                <label for="feeling">How are you feeling?<span class="required">*</span>:</label>
+                <input type="text" id="feeling" placeholder="Typing..." name="feeling" required>
+            </div>
+
+            <button style="width: fit-content; margin: 0 auto;" type="submit">Submit</button>
         </form>
-        <div id="greeting"></div>
+        <br>
+        <div id="greeting" style="text-align: center;"></div>
 
         <br>
     </main>
