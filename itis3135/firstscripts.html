@@ -18,6 +18,7 @@
         <div id="dateContainer" style="text-align: center;">
         </div>
         <br>
+        <div style="display: flex;">
         <form id="greeting-form" style="width: 400px;" onsubmit="return false;">
             <div class="text">
                 <label for="name">Name<span class="required">*</span>:</label>
@@ -31,10 +32,8 @@
 
             <button style="width: fit-content; margin: 0 auto;" type="submit">Submit</button>
         </form>
-        <br>
-        <div id="greeting" style="text-align: center;"></div>
-        <br>
-        <form id="number-form" style="width: 400px;" onsubmit="return false;">
+
+        <form id="number-form" style="width: 400px; align-self: center;" onsubmit="return false;">
             <div class="text">
                 <label for="number">Enter a number (1-10)<span class="required">*</span>:</label>
                 <input type="number" id="number" placeholder="0" name="number" min="-10" max="10" step=".01" required>
@@ -42,7 +41,9 @@
 
             <button style="width: fit-content; margin: 0 auto;" type="submit">Submit</button>
         </form>
-
+        </div>
+        <br>
+        <div id="greeting" style="text-align: center;"></div>
         <br>
     </main>
 
