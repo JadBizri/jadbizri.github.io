@@ -12,10 +12,7 @@ h1, h2, h3 {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: solid;
-    flex-wrap: wrap;
+    text-align: center;
 }
 
 .link-list {
@@ -23,6 +20,7 @@ header {
     gap: 35px;
     list-style: none;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .socials {
