@@ -18,6 +18,12 @@ form {
     border-color: black;
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .text{
     display: flex;
     justify-content: space-between;

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jad Bizri's Jobless Bullfrog || ITIS 3135 BYO Intro</title>
+    <link rel="stylesheet" href="./styles/default.css">
+    <link rel="stylesheet" href="./styles/introduction.css">
+    <link rel="stylesheet" href="./styles/forms.css">
+</head>
+<body>
+
+    <div data-include="./components/header.html"></div>
+
+    <main>
+        <br>
+        <h3 style="text-align: center;">Time to BYO Intro page, please fill out the form below so we can create your own page</h3>
+        <br>
+
+        <form style="width: 550px;">
+
+            <div class="text">
+                <label for="name">Name<span class="required">*</span>:</label>
+                <input type="text" value="Jad Bizri" required name="name" id="name">
+            </div>
+
+            <div class="text">
+                <label for="mascot">Mascot<span class="required">*</span>:</label>
+                <input type="text" value="Jobless Bullfrog" required name="mascot" id="mascot">
+            </div>
+
+            <div class="text">
+                <label for="introImage">Upload an image of yourself<span class="required">*</span>:</label>
+                <input type="file" name="file" id="introImage" required>
+            </div>
+
+            <label for="caption">Image Caption<span class="required">*</span>:</label>
+            <input type="text" name="caption" id="caption" value="Chilling in Greece" required>
+
+            <label for="personal">Personal Background<span class="required">*</span>:</label>
+            <input type="text" name="personal" id="personal" value="Grew up in Lebanon..." required>
+
+            <label for="professional">Professional Background<span class="required">*</span>:</label>
+            <input type="text" name="professional" id="professional" value="Software engineer at XYZ..." required>
+
+            <label for="academic">Academic Background<span class="required">*</span>:</label>
+            <input type="text" name="academic" id="academic" value="Computer Science student at..." required>
+
+            <label for="webdev">Background in Web Development<span class="required">*</span>:</label>
+            <input type="text" name="webdev" id="webdev" value="Took a course in web dev 1 year ago..." required>
+
+            <label for="platform">Primary Computer Platform<span class="required">*</span>:</label>
+            <input type="text" name="platform" id="platform" value="Windows 11 Pro" required>
+
+            <div class="courses-container">
+                <p>Courses currently taking:</p>
+                <div id="course"></div>
+                <br>
+                <button onclick="addCourse()">Add Course</button>
+            </div>
+
+            <label for="funny">Funny thing?</label>
+            <input type="text" name="funny" id="funny" value="I laugh at dad jokes!">
+
+            <label for="else">Anything else?</label>
+            <input type="text" name="else" id="else" value="I love gaming.">
+
+            <div class="text"><input type="checkbox" required><p style="padding-left: 10px;">I understand that what is on this page is not password protected and I will not put anything here that I do NOT want publicly available.<span class="required">*</span></p></div>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+        </form>
+        <br>
+    </main>
+
+    <div data-include="./components/footer.html"></div>
+
+    <script src="./scripts/HTMLInclude.min.js"></script>
+    <script src="./scripts/survey.js"></script>
+</body>
+</html>
