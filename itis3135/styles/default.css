@@ -54,3 +54,13 @@ footer {
 .page-title{
     text-align: center;
 }
+
+.bold {
+    font-weight: 800;
+}
+
+.regular-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
