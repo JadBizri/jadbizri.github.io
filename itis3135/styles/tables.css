@@ -1,6 +1,7 @@
 @media (max-width: 576px) {
     .overflow table {
         font-size: 2vw;
+        max-width: fit-content;
     }
 }
 
