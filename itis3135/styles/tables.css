@@ -1,3 +1,9 @@
+@media (max-width: 576px) {
+    .overflow table {
+        font-size: 2vw;
+    }
+}
+
 table {
     border-collapse: collapse;
     margin: 0 auto;
@@ -7,7 +13,6 @@ table {
     max-width: 100%;
     min-width: 200px;
     width: 700px;
-    font-size: 2vw;
 }
 
 th, td {
