@@ -7,6 +7,7 @@ table {
     max-width: 100%;
     min-width: 200px;
     width: 700px;
+    font-size: 2vw;
 }
 
 th, td {
@@ -33,10 +34,6 @@ th, td {
 
 figcaption, figure {
     margin: 0;
-}
-
-.overflow {
-    overflow-x: auto;
 }
 
 main {
