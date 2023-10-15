@@ -2,6 +2,8 @@
     .overflow table {
         font-size: 2vw;
         max-width: fit-content;
+        min-width: fit-content;
+        width: 389px;
     }
 }
 
@@ -13,7 +15,6 @@ table {
     border: 4px solid black;
     max-width: 100%;
     min-width: 200px;
-    width: 700px;
 }
 
 th, td {
