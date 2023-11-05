@@ -1,0 +1,110 @@
+:root {
+    --background: #363753;
+    --background-light: #5b5c8b;
+    --main-text: #FEFEFE;
+    --secondary: #5CD2C6;
+    --secondary-dark: #2a9a8f;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: var(--background);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--main-text);
+}
+
+#logo {
+    width: 175px;
+    min-width: 175px;
+}
+
+nav a{
+    padding: 0 16px;
+    font-size: 18px;
+}
+
+header {
+    padding: 16px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.link {
+    color: var(--secondary);
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.link:hover {
+    color: var(--secondary-dark);
+}
+
+h1 {
+    font-size: 3.75rem;
+    font-weight: normal;
+    line-height: 3.75rem;
+    text-align: center;
+}
+
+.caption {
+    text-align: center;
+}
+
+.secondary {
+    color: var(--secondary);
+}
+
+a {
+    text-decoration: none;
+}
+
+.block {
+    display: block;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    background-color: var(--secondary);
+    color: black;
+    padding: 16px 5%;
+    line-height: 1.5em;
+    gap: 15px;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+.container p {
+    margin: 0;
+}
+
+.button {
+    padding: 10px;
+    background-color: var(--background);
+    color: var(--main-text);
+    border-radius: 0.3em;
+    cursor: pointer;
+    border: none;
+    width: fit-content;
+    align-self: center;
+    font-size: 18px;
+    margin: 20px;
+}
+
+.button:hover {
+    background-color: var(--background-light);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
