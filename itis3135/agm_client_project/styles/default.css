@@ -149,10 +149,7 @@ footer {
 }
 
 .bundles {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    padding: 16px 5%;
 }
 
 .bundle {
@@ -160,7 +157,6 @@ footer {
     padding: 20px 8px;
     background-color: #5CD2C6 !important;
     flex-wrap: wrap;
-    width: 93%;
     min-width: 250px;
     border-radius: 0.5em;
     color: black;
