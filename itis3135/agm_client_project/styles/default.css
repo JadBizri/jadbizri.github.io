@@ -76,9 +76,14 @@ a {
     gap: 15px;
 }
 
+h3 {
+    font-size: 1.5rem;
+}
+
 h2 {
+    font-size: 2rem;
+    margin-top: 0;
     text-align: center;
-    margin: 20px;
 }
 
 .container p {
@@ -97,13 +102,85 @@ h2 {
     margin: 20px;
 }
 
+.button-secondary {
+    background-color: var(--secondary);
+    padding: 10px;
+    color: black;
+    border-radius: 0.3em;
+    cursor: pointer;
+    border: none;
+    align-self: center;
+    font-size: 18px;
+    margin: 20px;
+}
+
+.button-secondary:hover {
+    background-color: var(--secondary-dark);
+}
+
 .button:hover {
     background-color: var(--background-light);
 }
 
-footer {
+/* footer {
     position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
+} */
+
+footer {
+    text-align: center;
+}
+
+.services-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.services-list li {
+    background-color: #5CD2C6;
+    padding: 20px;
+    border-radius: 0.5em;
+    color: black;
+}
+
+.bundles {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.bundle {
+    text-align: center;
+    padding: 20px 8px;
+    background-color: #5CD2C6 !important;
+    flex-wrap: wrap;
+    width: 93%;
+    min-width: 250px;
+    border-radius: 0.5em;
+    color: black;
+}
+
+.bundle p {
+    padding: 0 35px;
+    color: #333333;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.bundle ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contacts {
+    padding: 16px 5%;
+    display: flex;
+    justify-content: space-around;
 }

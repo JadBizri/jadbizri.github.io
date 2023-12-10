@@ -1,17 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGM</title>
     <link rel="stylesheet" href="./styles/default.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#accordion").accordion();
+        });
+    </script>
 </head>
+
 <body>
 
     <div data-include="./components/header.html"></div>
 
     <main>
-        
+
+        <div class="services">
+            <h2>Our Services Include</h2>
+            <br>
+            <ul class="services-list">
+                <li>Content Creation</li>
+                <li>Social Media Management</li>
+                <li>Photoshoots & Content Editing</li>
+                <li>Web Development</li>
+                <li>Influencers Marketing</li>
+            </ul>
+        </div>
+
+        <br>
+        <h2 id="bundles">Our Monthly Bundles</h2>
+        <br>
+
+        <div class="bundles">
+            <div id="accordion">
+
+                <h2>The Cost-Cutting Bundle</h2>
+                <div class="bundle">
+                    <p>Maximize your social media impact with tailored strategies, engaging content, and analytics. All
+                        in one cost-effective package.</p>
+                    <ul>
+                        <h3>What You Get</h3>
+                        <li>8 Stories</li>
+                        <li>4 Posts</li>
+                        <li>2 Reels</li>
+                        <li>1 content creation session</li>
+                        <li>Instagram Management</li>
+                    </ul>
+                </div>
+
+                <h2>The Boost Bundle</h2>
+                <div class="bundle">
+                    <p>Boost your online presence with creative content creation, strategic scheduling,
+                        and in-depth audience analysis.
+                    </p>
+                    <ul>
+                        <h3>What You Get</h3>
+                        <li>10 Stories</li>
+                        <li>6 Posts</li>
+                        <li>4 Reels</li>
+                        <li>2 content creation sessions</li>
+                        <li>Instagram Management</li>
+                    </ul>
+                </div>
+
+
+                <h2>The Content Pro Bundle</h2>
+                <div class="bundle">
+                    <p>Elevate your business's content strategy with our expert team of content creators, dedicated
+                        to crafting compelling and top-tier visuals.
+                    </p>
+                    <ul>
+                        <h3>What You Get</h3>
+                        <li>14 Stories</li>
+                        <li>10 Posts</li>
+                        <li>6 Reels</li>
+                        <li>3 content creation sessions</li>
+                        <li>30 minutes of community engagement a week</li>
+                        <li>Instagram and Facebook Management</li>
+                    </ul>
+                </div>
+
+                <h2>The Social Success Bundle</h2>
+                <div class="bundle">
+                    <p>Elevate your business's content strategy with our expert team of content creators, dedicated
+                        to crafting compelling and top-tier visuals.
+                    </p>
+                    <ul>
+                        <h3>What You Get</h3>
+                        <li>18 Stories</li>
+                        <li>14 Posts</li>
+                        <li>8 Reels</li>
+                        <li>4 content creation sessions</li>
+                        <li>50 minutes of community engagement a week</li>
+                        <li>Instagram, Facebook, and Tiktok Management</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bundle">
+                <h3>For more information</h3>
+                <a href="./contact.html"><button class="button">Contact Us</button></a>
+            </div>
+        </div>
+
+
     </main>
 
     <div data-include="./components/footer.html"></div>
@@ -20,4 +119,5 @@
     <script src="./scripts/default_script.js" async></script>
 
 </body>
+
 </html>

@@ -7,14 +7,42 @@
     <link rel="stylesheet" href="./styles/default.css">
 </head>
 <body>
-
+     
     <div data-include="./components/header.html"></div>
 
     <main>
+        <h1>Contact Us</h1>
+        <form id="emailForm" class="container">
+            <input type="hidden" id="recipientEmail" value="agm-agency@gmail.com">
+            <label for="emailContent">Enter your message:</label>
+            <textarea id="emailContent" rows="4" cols="50"></textarea>
+            <br>
+            <input type="button" value="Compose Email" onclick="composeEmail()">
+        </form>
+        <br><br>
+        <div class="contacts">
+            <a target="_blank" href="https://wa.me/96181366341"><button class="button-secondary">Send us a message on WhatsApp!</button></a>
+            <a target="_blank" href="https://www.instagram.com/agm__agency/"><button class="button-secondary">DM us on Instagram!</button></a>
+        </div>
 
     </main>
 
     <div data-include="./components/footer.html"></div>
+
+    <script>
+        function composeEmail() {
+            // Get the constant recipient's email and the content of the textarea
+            var recipientEmail = document.getElementById("recipientEmail").value;
+            var emailContent = document.getElementById("emailContent").value;
+
+            // Create a mailto link with constant recipient, subject, and body parameters
+            var mailtoLink = "mailto:" + encodeURIComponent(recipientEmail) +
+                             "?subject=My%20Subject&body=" + encodeURIComponent(emailContent);
+
+            // Open the default email client
+            window.location.href = mailtoLink;
+        }
+    </script>
 
     <script src="./scripts/HTMLInclude.min.js" async></script>
     <script src="./scripts/default_script.js" async></script>
